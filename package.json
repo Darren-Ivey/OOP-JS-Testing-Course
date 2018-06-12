@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test": "ava --verbose --serial"
+    "test-ava": "ava --verbose --serial",
+    "test-mocha": "mocha"
   },
   "devDependencies": {
     "ava": "^0.25.0"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
   }
 }

@@ -1,6 +1,6 @@
 
 import test from 'ava'
-import { rockPaperScissors, gameResult } from './rockPaperScissors';
+import { rockPaperScissors } from './rockPaperScissors';
 
 test('rock beat scissors', t => {
     const player1Selection = 'rock';
