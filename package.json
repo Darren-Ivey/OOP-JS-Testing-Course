@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test-ava": "ava --verbose --serial './src/module/**.ava.test.js'",
-    "test-mocha": "mocha './src/module/**.mocha.test.js'"
+    "test-ava": "ava --verbose --serial './src/module/*/*.ava.test.js'",
+    "test-mocha": "mocha './src/module/*/*.mocha.test.js'"
   },
   "devDependencies": {
     "ava": "^0.25.0",
