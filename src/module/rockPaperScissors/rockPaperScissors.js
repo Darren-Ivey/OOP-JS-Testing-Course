@@ -15,7 +15,7 @@ const rockPaperScissors = class {
         }
     }
 
-    static game (player1Selection, player2Selection) {
+    static round (player1Selection, player2Selection) {
         const weakness = {
             'rock': 'paper',
             'paper': 'scissors',
