@@ -19,4 +19,6 @@ test('scissors beat paper', t => {
 
 test('draw', t => {
     t.is(rockPaperScissors.game('rock', 'rock') , "draw");
+    t.is(rockPaperScissors.game('scissors', 'scissors') , "draw");
+    t.is(rockPaperScissors.game('paper', 'paper') , "draw");
 });
