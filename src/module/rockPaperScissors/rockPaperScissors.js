@@ -11,7 +11,7 @@ const rockPaperScissors = class {
             if (player1Score !== player2Score) {
                 return player1Score > player2Score ? "player1 wins the game!" : "player2 wins the game!";
             }
-            return "The game is a draw"
+            return "the game is a draw"
         }
     }
 
