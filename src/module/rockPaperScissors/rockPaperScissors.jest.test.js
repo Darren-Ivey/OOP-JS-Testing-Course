@@ -22,9 +22,17 @@ test('draw', () => {
     expect(rockPaperScissors.game('paper', 'paper')).toBe("draw");
 });
 
-test('One player wins 2 of 3 games', () => {
+test('Player1 wins within 3 games', () => {
    const playerOneScore = [0,1,1];
    const playerTwoScore = [1,0,0];
 
    expect(rockPaperScissors.gameResult(playerOneScore,playerTwoScore)).toBe("player1");
+});
+
+
+test('The game is a draw within 3 games', () => {
+    const playerOneScore = [0,0,1];
+    const playerTwoScore = [1,0,0];
+
+    expect(rockPaperScissors.gameResult(playerOneScore,playerTwoScore)).toBe("draw");
 });
