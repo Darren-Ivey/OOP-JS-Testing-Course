@@ -1,11 +1,13 @@
 
 const rockPaperScissors = class {
 
-    static gameResult (score1, score2) {
+    static numberOfWins (score) {
+        return score.reduce((a, b) =>  a + b);
+    }
 
-        const numberOfWins = (score) => score.reduce((a, b) =>  a + b);
-        const player1Score = numberOfWins(score1);
-        const player2Score = numberOfWins(score2);
+    static gameResult (score1, score2) {
+        const player1Score = this.numberOfWins(score1);
+        const player2Score = this.numberOfWins(score2);
 
         if (score1.length === 3) {
             if (player1Score !== player2Score) {
