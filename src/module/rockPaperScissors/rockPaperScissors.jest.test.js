@@ -26,14 +26,14 @@ test('Player1 wins after 3 games', () => {
    const playerOneScore = [0,1,1];
    const playerTwoScore = [1,0,0];
 
-   expect(rockPaperScissors.gameResult(playerOneScore,playerTwoScore)).toBe("player1");
+   expect(rockPaperScissors.gameResult(playerOneScore,playerTwoScore)).toBe("player1 wins the game!");
 });
 
 test('Player2 wins after 3 games', () => {
     const playerOneScore = [0,1,0];
     const playerTwoScore = [1,0,1];
 
-    expect(rockPaperScissors.gameResult(playerOneScore,playerTwoScore)).toBe("player2");
+    expect(rockPaperScissors.gameResult(playerOneScore,playerTwoScore)).toBe("player2 wins the game!");
 });
 
 
@@ -41,5 +41,5 @@ test('The game is a draw after 3 games', () => {
     const playerOneScore = [0,0,1];
     const playerTwoScore = [1,0,0];
 
-    expect(rockPaperScissors.gameResult(playerOneScore,playerTwoScore)).toBe("draw");
+    expect(rockPaperScissors.gameResult(playerOneScore,playerTwoScore)).toBe("The game is a draw");
 });
